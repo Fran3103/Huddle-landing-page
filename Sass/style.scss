@@ -1,0 +1,158 @@
+@import url(/Sass/cssreload.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+$font-open: 'Open Sans';
+$font-poppin: 'Poppins';
+
+$Pink: hsl(322, 100%, 66%);
+$VeryPaleCyan: hsl(193, 100%, 96%);
+$VeryDarkCyan: hsl(192, 100%, 9%);
+$GrayishBlue: hsl(208, 11%, 55%);
+
+/* version mobile 375px */
+h1{
+    font-size: 1.5em;
+    color: $VeryDarkCyan;
+}
+
+p{
+    color: $VeryDarkCyan;
+    font-family: $font-open;
+    line-height: 1.5;
+    font-size: 1em;
+    
+}
+body{
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: $font-open;
+    
+
+
+
+    header{
+        background: url(/images/bg-hero-mobile.svg) no-repeat  $VeryPaleCyan;
+        max-width: 375px;
+        width: 100%;
+        padding: 20px;
+        padding-top: 40px;
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+                img{
+                    width: 80px;
+                }
+                
+                button{ 
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 30px;
+                    background-color: #ffff;
+                    border: none;
+                    box-shadow: 1px 1px 10px $GrayishBlue;
+                    p{
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 10px;
+                        font-family: $font-poppin;
+
+                    }
+                
+                
+            }
+        }
+        .encabezado{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 100vw;
+
+            h1{
+                margin: 20px;
+                width: 260px;
+                line-height: 1.5;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                width: 275px;
+                margin-bottom: 30px;
+                }
+            .get-start{
+                width: 200px;
+                height: 60px;
+                border-radius: 30px;
+                background-color: $Pink;
+                border: none;
+                box-shadow: 1px 2px 10px $GrayishBlue;
+                font-family: $font-open;
+                font-weight: 600;
+                color: #fff;
+            } 
+
+            img{
+                margin: 40px 0;
+                width: 275px;
+            }
+    }
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            width: 345px;
+            margin-top: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 2px #f7f7f7 ; 
+            gap: 20px;
+            img{
+                margin-top: 50px;
+                width: 275px;
+                
+            }
+            p{
+                color: $GrayishBlue;
+            }
+
+        }
+        .card-1{
+            p{
+                padding: 0 20px 20px 20px;
+            }
+        }
+        .card-2{
+            p{
+                padding: 0 22px 20px 22px;
+            }
+        }
+        .card-3{
+            p{
+                padding: 0 35px 20px 35px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
