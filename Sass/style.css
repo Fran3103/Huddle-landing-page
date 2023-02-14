@@ -116,9 +116,11 @@ body .container .card-2 p {
   padding: 0 22px 20px 22px;
 }
 body .container .card-3 p {
-  padding: 0 35px 20px 35px;
+  padding: 0 35px 10px 35px;
 }
 body .ready {
+  position: relative;
+  top: 120px;
   margin: 60px 0;
 }
 body .ready .card-ready {
@@ -128,11 +130,12 @@ body .ready .card-ready {
   align-items: center;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px #f7f7f7;
+  box-shadow: 0 0 1px 2px #f7f7f7;
   width: 345px;
   padding: 20px;
   text-align: center;
   position: relative;
+  top: 0;
 }
 body .ready .card-ready h3 {
   font-size: 1em;
@@ -162,6 +165,7 @@ body footer {
   padding: 20px;
 }
 body footer .container-footer {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -203,13 +207,15 @@ body footer .container-footer .about a {
 body footer .container-footer .redes {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  height: 100%;
+  justify-content: center;
+  gap: 10px;
   align-items: center;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 body footer .container-footer .redes i {
   color: #fff;
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
   border: 1px solid #fff;
 }
